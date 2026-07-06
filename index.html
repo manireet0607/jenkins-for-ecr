@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fusion Feast</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #111;
+        color: #fff;
+    }
+
+    header {
+        background: rgba(0,0,0,0.7);
+        padding: 15px 50px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    header h1 {
+        color: #ff9800;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ff9800;
+    }
+
+    .hero {
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 60px;
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    section {
+        padding: 80px 50px;
+        text-align: center;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .card {
+        background: #222;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        background: #333;
+    }
+
+    .card h3 {
+        color: #ff9800;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        background: #1a1a1a;
+    }
+
+    .contact {
+        background: #222;
+    }
+
+    footer {
+        background: black;
+        text-align: center;
+        padding: 20px;
+        color: gray;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fusion Feast</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Experience Flavors From Around The World</h2>
+</div>
+
+<section id="menu">
+    <h2>Our Multi-Cuisine Menu</h2>
+    <div class="menu">
+
+        <div class="card">
+            <h3>Indian</h3>
+            <p>Butter Chicken</p>
+            <p>Paneer Tikka</p>
+            <p>Biryani</p>
+        </div>
+
+        <div class="card">
+            <h3>Italian</h3>
+            <p>Pizza</p>
+            <p>Pasta Alfredo</p>
+            <p>Lasagna</p>
+        </div>
+
+        <div class="card">
+            <h3>Chinese</h3>
+            <p>Fried Rice</p>
+            <p>Noodles</p>
+            <p>Manchurian</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p style="margin-top:20px; max-width:700px; margin:auto;">
+        At Fusion Feast, we bring together flavors from across the globe.
+        Whether you're craving Indian spices, Italian comfort food, or Chinese delicacies,
+        we serve it all with style and passion.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p style="margin-top:20px;">📍 Delhi, India</p>
+    <p>📞 +91 9876543210</p>
+    <p>📧 contact@fusionfeast.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Fusion Feast | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
