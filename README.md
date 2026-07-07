@@ -369,6 +369,7 @@ Allow
 |------|------|
 | SSH | 22 |
 | HTTP | 80 |
+|COSTOM PORT | 8080|
 
 Install Docker
 
